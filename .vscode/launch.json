@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "collatz-conjecture",
+            "cwd": "collatz-conjecture",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hello-world",
+            "cwd": "hello-world",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "leap",
+            "cwd": "leap",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "resistor-color",
+            "cwd": "resistor-color",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "resistor-color-duo",
+            "cwd": "resistor-color-duo",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "reverse-string",
+            "cwd": "reverse-string",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "two-fer",
+            "cwd": "two-fer",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
