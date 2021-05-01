@@ -1,17 +1,11 @@
 class WordCount {
-  Map<String, int> countWords(String words) {
-    Map<String, int> wordsCounted = {};
+  RegExp expression = RegExp(r"[a-z]+('[a-z]+)?|\d+", caseSensitive: false);
 
-    for (var word in words.split(" ")) {
-      wordsCounted.putIfAbsent(word, () => 0);
-    }
-
-    for (String word in words.split(" ")) {
-      if (wordsCounted.containsKey(word)) {
-        wordsCounted.update(word, (value) => value + 1);
-      }
-    }
-
-    return wordsCounted;
+  Map<String, int> countWords(String text) {
+    Map<String, int> result = Map();
+    expression.allMatches(text).forEach((match) => {
+          result.update(match[0].toLowerCase(), (i) => i + 1, ifAbsent: () => 1)
+        });
+    return result;
   }
 }
